@@ -56,7 +56,7 @@ std::unique_ptr<Node> TextNode::clone() const
 {
     auto node = std::make_unique<TextNode>();
     node->text = text;
-    return std::move(node);
+    return node;
 }
 
 Element::Element(ElementId id)
